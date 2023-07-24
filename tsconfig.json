@@ -22,6 +22,6 @@
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "allowJs": true,
-    "useUnknownInCatchVariables": false,
+    "useUnknownInCatchVariables": false
   }
 }
