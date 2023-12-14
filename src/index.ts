@@ -9,5 +9,5 @@ export function isShipped(
   return shipped;
 }
 
-const product: ProductA = ['red', 'digital', 13];
+const product: ProductA = ['red', 'digital', 24];
 console.log(isShipped(true, ...product));
