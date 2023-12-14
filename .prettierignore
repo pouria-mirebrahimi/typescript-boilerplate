@@ -1,1 +1,12 @@
+.vscode/*
+
+.prettierrc
+
+.eslintrc.js
+.yarnrc.yaml
+.yarnrc.yml
+
+**/*.json
+**/*.md
+
 src/database/migrations/*.ts

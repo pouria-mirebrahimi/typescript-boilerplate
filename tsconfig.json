@@ -6,26 +6,37 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "allowSyntheticDefaultImports": true,
-    "target": "ES2017",
+    "target": "ES2018",
     "sourceMap": true,
     "outDir": "./dist",
+    "rootDir": "src",
     "baseUrl": "./",
     "paths": {
       "@app-common": ["src/lib"],
-      "@app-common/*": ["src/lib/*"],
+      "@app-common/*": ["src/lib/*"]
     },
     "incremental": true,
-    "skipLibCheck": true,
     "strictNullChecks": false,
-    "noImplicitAny": false,
+    "stripInternal": true,
+    "noImplicitAny": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": true,
     "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
+    "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
     "allowJs": true,
+    "strict": true,
     "useUnknownInCatchVariables": false
   },
   "include": ["src"],
-  "exclude": ["node_modules"],
+  "exclude": [
+    "node_modules",
+    "**/*.test.*",
+    "**/*.spec.*",
+    "**/__mocks__/*",
+    "**/__tests__/*"
+  ],
   "extends": "@tsconfig/node18/tsconfig.json"
 }

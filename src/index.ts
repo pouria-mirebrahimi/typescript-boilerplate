@@ -1,8 +1,13 @@
-import moment from 'moment-timezone';
+export type ProductA = [color: string, category: string, price: number];
+export type ProductB = [size: string, serial: string, price: number];
+export type Shipping<T extends any[]> = [shipped: boolean, ...product: T];
 
-const dateTime = moment.tz(
-  'May 30th 2023 8:30PM',
-  'MMM Do YYYY h:mA',
-  'Asia/Tehran',
-);
-console.log(moment().startOf('minutes').from(dateTime));
+export function isShipped(
+  ...shippingProduct: Shipping<ProductA | ProductB>
+): boolean {
+  const [shipped] = shippingProduct;
+  return shipped;
+}
+
+const product: ProductA = ['red', 'digital', 25];
+console.log(isShipped(true, ...product));
