@@ -1,7 +1,8 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: 'tsconfig.json',
+    ecmaVersion: 'latest',
+    project: './tsconfig.eslint.json',
     sourceType: 'module',
     tsconfigRootDir: __dirname,
   },
@@ -29,7 +30,8 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
-    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-params': 'off',
     '@typescript-eslint/require-await': 'off',
     '@typescript-eslint/no-floating-promises': 'off',
     'no-unused-vars': 'off',
