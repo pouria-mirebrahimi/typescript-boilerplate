@@ -12,6 +12,10 @@ const config: Config = {
   collectCoverageFrom: ['src/**/*.(t|j)s'],
   coverageDirectory: './coverage',
   testEnvironment: 'node',
+  roots: ['<rootDir>/src/', '<rootDir>/test/'],
+  moduleNameMapper: {
+    '^@app/lib(|/.*)$': '<rootDir>/src/lib/$1',
+  },
 };
 
 export default config;
