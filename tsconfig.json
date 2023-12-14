@@ -28,15 +28,12 @@
     "resolveJsonModule": true,
     "allowJs": true,
     "strict": true,
+    "composite": true,
     "useUnknownInCatchVariables": false
   },
   "include": ["src"],
   "exclude": [
     "node_modules",
-    "**/*.test.*",
-    "**/*.spec.*",
-    "**/__mocks__/*",
-    "**/__tests__/*"
   ],
   "extends": "@tsconfig/node18/tsconfig.json"
 }
