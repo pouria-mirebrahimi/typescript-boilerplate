@@ -2,7 +2,6 @@
 
 .prettierrc
 
-.eslintrc.js
 .yarnrc.yaml
 .yarnrc.yml
 
