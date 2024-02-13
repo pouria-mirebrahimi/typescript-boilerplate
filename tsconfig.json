@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "Node16",
     "declaration": true,
     "removeComments": true,
     "emitDecoratorMetadata": true,
@@ -26,6 +26,7 @@
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": false,
     "resolveJsonModule": true,
+    "moduleResolution": "Node16",
     "allowJs": true,
     "strict": true,
     "composite": true,
@@ -35,5 +36,5 @@
   "exclude": [
     "node_modules",
   ],
-  "extends": "@tsconfig/node18/tsconfig.json"
+  "extends": "@tsconfig/node20/tsconfig.json"
 }
