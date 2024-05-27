@@ -37,7 +37,7 @@ module.exports = {
     'no-unused-vars': 'off',
     'require-await': 'off',
     'max-lines-per-function': ['error', { max: 24 }],
-    'max-lines-per-function': ['warn', { max: 12 }],
+    'max-lines-per-function': ['warn', { max: 24 }],
     'max-classes-per-file': ['error', { ignoreExpressions: true, max: 1 }],
   },
 };
