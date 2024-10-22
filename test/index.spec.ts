@@ -14,7 +14,7 @@ describe('testing shipping status of products', () => {
 
   it('it should not be a shipped product', () => {
     const product: ProductB = ['xs', '231AX6T', 16.5];
-    const shippingProduct: ShippingProduct<ProductA> = [
+    const shippingProduct: ShippingProduct<ProductB> = [
       ShippingState.NOT_SHIPPED,
       ...product,
     ];

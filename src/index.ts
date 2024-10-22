@@ -8,5 +8,9 @@ export type ShippingProduct<T extends unknown[]> = [
   ...product: T,
 ];
 
-// TODO - implement the function below to pass its tests
-export function isShipped(): void {}
+export function isShipped(
+  shippingProduct: ShippingProduct<ProductA | ProductB>,
+): boolean {
+  const [shipped] = shippingProduct;
+  return shipped === ShippingState.SHIPPED;
+}
